@@ -1,13 +1,7 @@
-/* 
-   Estils per Un Dar la Flota
-   Fet per: [tu]
-   Data: 08/01/2026
-   Nota: alguns paddings no quadren bé en mòbil, ho arreglaré més tard
-*/
 
 body {
     margin: 0;
-    background-color: #e6f0fa; /* blau clar suau */
+    background-color: #e6f0fa; 
     font-family: Arial, sans-serif;
     color: #2c3e50;
 }
@@ -27,7 +21,6 @@ body {
     color: #555;
 }
 
-/* ===== HEADER ===== */
 .topnav {
     width: 100%;
     padding: 12px 0;
@@ -86,7 +79,6 @@ body {
     color: #1e88e5;
 }
 
-/* ===== HERO ===== */
 .hero {
     text-align: center;
     padding: 50px 20px 30px;
@@ -109,7 +101,6 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ===== SCROLL HINT ===== */
 .scroll-hint {
     text-align: center;
     margin: 20px 0;
@@ -126,13 +117,11 @@ body {
     50% { transform: translateY(-8px); }
 }
 
-/* ===== SVG ANIMAT ===== */
 .svg-box {
     text-align: center;
     margin: 25px 0;
 }
 
-/* ===== SECCIÓ CARDS ===== */
 .seccion-cartas {
     max-width: 900px;
     margin: 40px auto;
@@ -202,7 +191,6 @@ body {
     font-size: 18px;
 }
 
-/* ===== FOOTER ===== */
 .footer {
     background-color: #0d47a1;
     color: white;
@@ -242,7 +230,6 @@ body {
     transform: scale(1.2);
 }
 
-/* ===== MENÚ INFERIOR (secondary-menu) ===== */
 .secondary-menu {
     background-color: #37474f;
     padding: 10px 0;
@@ -272,7 +259,6 @@ body {
     background-color: #546e7a;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -297,5 +283,160 @@ body {
         text-align: center;
     }
 
-    /* PD: aquí falta millorar el padding del footer, ho faig demà */
+}
+
+/*Final Index*/
+
+/*Inicio instruccions*/
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.page-header h1 {
+    color: #0d47a1;
+    font-size: 3rem;
+}
+
+.seccion-instruccions {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.instruccio-pas {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.instruccio-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.instruccio-text h3 {
+    color: #1e88e5;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.instruccio-text ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.instruccio-text li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.instruccio-img {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.screenshot {
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #bbdefb;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.seccion-tarjeta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f9ff;
+}
+
+.tarjeta-interactiva {
+    max-width: 500px;
+    margin: 30px auto;
+    position: relative;
+    height: 300px;
+}
+
+.tarjeta-interactiva img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+}
+
+.tarjeta-interactiva .img-base {
+    opacity: 1;
+    z-index: 1;
+}
+
+.tarjeta-interactiva .img-hover {
+    opacity: 0;
+    z-index: 2;
+}
+
+.tarjeta-interactiva:hover .img-base {
+    opacity: 0;
+}
+
+.tarjeta-interactiva:hover .img-hover {
+    opacity: 1;
+}
+
+.tarjeta-text {
+    margin-top: 20px;
+}
+
+.tarjeta-text h3 {
+    color: #0d47a1;
+    font-size: 1.4rem;
+}
+
+.seccion-mecaniques {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.llista-mecaniques {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.llista-mecaniques li {
+    background: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid #1e88e5;
+}
+
+@media (max-width: 768px) {
+    .instruccio-pas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instruccio-img {
+        order: -1;
+    }
+
+    .screenshot {
+        max-width: 100%;
+    }
+
+    .tarjeta-interactiva {
+        width: 90%;
+    }
 }
