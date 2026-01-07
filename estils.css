@@ -440,3 +440,121 @@ body {
         width: 90%;
     }
 }
+
+/*Final Instruccions*/
+
+/*Inicio Historia*/
+.carrusel-section {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.carrusel-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.carrusel-container {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.carrusel-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    width: 1800px; /* 6 slides × 300px */
+}
+
+.carrusel-slide {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-right: 1px solid #eee;
+}
+
+.carrusel-slide:last-child {
+    border-right: none;
+}
+
+.carrusel-slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #0096d2;
+}
+
+.carrusel-slide p {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-900px); } /* 3 slides de ancho */
+}
+
+.historia-text {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.historia-bloque {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.historia-img {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.historia-contingut {
+    flex: 1;
+    min-width: 300px;
+}
+
+.historia-contingut h2 {
+    color: #0d47a1;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.historia-contingut p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+    .historia-bloque {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carrusel-slides {
+        gap: 10px;
+    }
+
+    .slide {
+        padding: 15px;
+    }
+}
+/*Final Historia*/
+
