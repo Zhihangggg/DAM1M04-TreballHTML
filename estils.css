@@ -1,0 +1,301 @@
+/* 
+   Estils per Un Dar la Flota
+   Fet per: [tu]
+   Data: 08/01/2026
+   Nota: alguns paddings no quadren bé en mòbil, ho arreglaré més tard
+*/
+
+body {
+    margin: 0;
+    background-color: #e6f0fa; /* blau clar suau */
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+}
+
+.frecklefont {
+    font-family: "Freckle Face", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.facefont {
+    font-family: "Freckle Face", system-ui;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* ===== HEADER ===== */
+.topnav {
+    width: 100%;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.game-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.game-logo .material-icons-outlined {
+    font-size: 32px;
+    color: #1e88e5;
+}
+
+.game-logo h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #e3f2fd;
+    color: #1e88e5;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.8)),
+                url('assets/img/fondo-mar.jpg') center/cover;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.hero-img {
+    width: 180px;
+    margin-top: 20px;
+    border: 3px solid #1e88e5;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== SCROLL HINT ===== */
+.scroll-hint {
+    text-align: center;
+    margin: 20px 0;
+    color: #666;
+}
+
+.scroll-hint p {
+    font-size: 1.1rem;
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* ===== SVG ANIMAT ===== */
+.svg-box {
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* ===== SECCIÓ CARDS ===== */
+.seccion-cartas {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.seccion-cartas h2 {
+    font-size: 2.4rem;
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+.contenedorcartas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Cartas {
+    width: 250px;
+    background: white;
+    border: 1px solid #bbdefb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.25s;
+}
+
+.Cartas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(30, 136, 229, 0.2);
+}
+
+.Cartas h3 {
+    color: #1e88e5;
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+}
+
+.Cartas p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.link-btn {
+    display: inline-block;
+    margin-top: 25px;
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: 2px solid #1e88e5;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.link-btn:hover {
+    background-color: #e3f2fd;
+    transform: translateX(4px);
+}
+
+.link-btn .material-icons-outlined {
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0d47a1;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* ===== MENÚ INFERIOR (secondary-menu) ===== */
+.secondary-menu {
+    background-color: #37474f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.secondary-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.secondary-menu a {
+    color: #eceff1;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.secondary-menu a:hover {
+    background-color: #546e7a;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .contenedorcartas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Cartas {
+        width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* PD: aquí falta millorar el padding del footer, ho faig demà */
+}

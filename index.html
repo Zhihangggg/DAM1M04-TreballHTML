@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estils.css">
+    <title>Hundir la Flota | Inici</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="topnav">
+        <div class="header-content">
+            <div class="game-logo">
+                <span class="material-icons-outlined">anchor</span>
+                <h1 class="frecklefont">Un Dar la Flota</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Inici</a></li>
+                <li><a href="instruccions.html">Instruccions</a></li>
+                <li><a href="historia.html">Història</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1 class="frecklefont">¡Preparat per la batalla?</h1>
+        <p class="facefont">
+            El clàssic joc de taula torna… però ara amb més estratègia, diversió i <em>“tocat i enfonsat!”</em> 🚢💥
+        </p>
+        <img src="img/Barco.png">
+    </div>
+
+    <div class="scroll-hint">
+        <p>Desplaça't avall per començar…</p>
+    </div>
+
+    <div class="svg-box">
+        <svg width="120" height="60" viewBox="0 0 120 60">
+            <path d="M0,30 Q30,10 60,30 T120,30" stroke="#4fc3f7" stroke-width="4" fill="none">
+                <animate attributeName="d" 
+                         values="M0,30 Q30,10 60,30 T120,30;
+                                 M0,30 Q30,50 60,30 T120,30;
+                                 M0,30 Q30,10 60,30 T120,30"
+                         dur="3s" repeatCount="indefinite"/>
+            </path>
+        </svg>
+    </div>
+
+    <section class="seccion-cartas">
+        <h2 class="frecklefont">Com es juga?</h2>
+        <div class="contenedorcartas">
+            <div class="Cartas">
+                <h3>1. Col·loca</h3>
+                <p>Posiciona els teus 5 vaixells al tauler secret.</p>
+            </div>
+            <div class="Cartas">
+                <h3>2. Dispara</h3>
+                <p>Di una coordenada: <strong>“C5!”</strong></p>
+            </div>
+            <div class="Cartas">
+                <h3>3. Guanya</h3>
+                <p>Enfonsa tota la flota rival abans que ells ho facin!</p>
+            </div>
+        </div>
+        <a href="instruccions.html" class="link-btn">
+            <span class="material-icons-outlined">arrow_forward</span>
+            Veure instruccions completes
+        </a>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Un Dar la Flota</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/?locale=es_ES"><span class="material-icons-outlined">facebook</span></a>
+                <a href="https://www.reddit.com/"><span class="material-icons-outlined">reddit</span></a>
+                <a href="https://www.tiktok.com/"><span class="material-icons-outlined">tiktok</span></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
