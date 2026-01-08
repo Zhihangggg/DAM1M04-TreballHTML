@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estils.css">
+    <title>Un Dar la Flota | Contacte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+        <div class="header-content">
+            <div class="game-logo">
+                <span class="material-icons-outlined">anchor</span>
+                <h1 class="frecklefont">Un Dar la Flota</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="instruccions.html">Instruccions</a></li>
+                <li><a href="historia.html">Història</a></li>
+                <li><a href="contacte.html" class="active">Contacte</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1 class="frecklefont">Contacte</h1>
+        <p class="facefont">Parlem de vaixells, estratègia i partides infinites!</p>
+    </div>
+
+    <section class="contacte-info">
+        <div class="contacte-dades">
+            <div class="dada-item">
+                <span class="material-icons-outlined">location_on</span>
+                <p> Carrer Bonavista, 70, 08940 Cornellà de Llobregat, Barcelona</p>
+            </div>
+            <div class="dada-item">
+                <span class="material-icons-outlined">phone</span>
+                <p><a href="tel:+34612345678">+34 612 34 56 78</a></p>
+            </div>
+            <div class="dada-item">
+                <span class="material-icons-outlined">mail</span>
+                <p><a href="mailto:hola@undarlaflota.cat">hola@undarlaflota.cat</a></p>
+            </div>
+        </div>
+        <div class="mapa-container">
+            <img src="img/mapa.png">
+    </section>
+
+    <section class="formulari-seccio">
+        <h2 class="frecklefont">Envia'ns un missatge</h2>
+        <form class="formulari" novalidate>
+            <div class="form-group">
+                <input type="text" id="nom" name="nom" required>
+                <label for="nom">Nom</label>
+                <span class="error">Nom obligatori</span>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}" required>
+                <label for="telefon">Telèfon (9 dígits)</label>
+                <span class="error">Telèfon invàlid (ex: 612345678)</span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Correu electrònic</label>
+                <span class="error">Correu invàlid</span>
+            </div>
+            <div class="form-group">
+                <textarea id="missatge" name="missatge" rows="4" required></textarea>
+                <label for="missatge">El teu missatge</label>
+                <span class="error">Escriu un missatge</span>
+            </div>
+            <button type="submit" class="form-btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Un Dar la Flota</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/?locale=es_ES"><span class="material-icons-outlined">facebook</span></a>
+                <a href="https://www.reddit.com/"><span class="material-icons-outlined">reddit</span></a>
+                <a href="https://www.tiktok.com/"><span class="material-icons-outlined">tiktok</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

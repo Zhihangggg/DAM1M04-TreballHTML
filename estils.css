@@ -558,3 +558,151 @@ body {
 }
 /*Final Historia*/
 
+/*Inicio COntacto*/
+.contacte-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contacte-dades {
+    flex: 1;
+    min-width: 300px;
+}
+
+.dada-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.dada-item .material-icons-outlined {
+    font-size: 28px;
+    color: #1e88e5;
+    margin-top: 4px;
+}
+
+.dada-item p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.dada-item a {
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.dada-item a:hover {
+    text-decoration: underline;
+}
+
+.mapa-container {
+    flex: 3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.mapa-container img {
+    width: 100%;
+}
+
+.formulari-seccio {
+    max-width: 800px;
+    margin: 50px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.formulari-seccio h2 {
+    color: #0d47a1;
+    margin-bottom: 30px;
+}
+
+.formulari {
+    background: white;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #bbdefb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e88e5;
+    background-color: #f5fbff;
+}
+
+.form-group label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #777;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.form-group input:valid ~ label,
+.form-group textarea:valid ~ label,
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.85rem;
+    background: white;
+    padding: 0 5px;
+    color: #1e88e5;
+}
+
+.form-group .error {
+    display: none;
+    color: #e53935;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.form-btn {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.form-btn:hover {
+    background-color: #1976d2;
+}
+
+@media (max-width: 768px) {
+    .contacte-info {
+        flex-direction: column;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+}
