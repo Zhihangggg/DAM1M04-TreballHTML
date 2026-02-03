@@ -706,3 +706,34 @@ body {
         font-size: 0.9rem;
     }
 }
+/* Estils específics per a la pàgina About Us */
+
+.video-seccio {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relació d'aspecte 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border: 4px solid white;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .video-seccio {
+        margin: 30px auto;
+    }
+}
